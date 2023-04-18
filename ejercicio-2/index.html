@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form * {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Mi primera tabla</caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th scope="col">Info</th>
+                <th scope="col">Cuando arranque</th>
+                <th scope="col">Datos random</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">JavaScript</th>
+                <td>Alto nivel. Tipado dinamico. Multiparadigma. De un solo hilo. Compilacion JIT/interpretado</td>
+                <td>2021, 4to año</td>
+                <td>Soy el unico pelotudo del curso que se vio una charla de una hora explicando el event loop para entender como funcionan las promesas</td>
+            </tr>
+            <tr>
+                <th scope="row">C</th>
+                <td>Tecnicamente de alto nivel (comparado con js es nivel bajo). Tipado estatico. Procedural. Multi-hilo. Compilado</td>
+                <td>2021, 4to año</td>
+                <td>En mi humilde opinion, todos los q se quieran dedicar a la programacion deberian usarlo alguna vez. Aprendes una bocha de como funciona un programa, las diferentes secciones de la memoria, las estructuras de datos y como implementarlas, etc.</td>
+            </tr>
+            <tr>
+                <th scope="row">Java</th>
+                <td>Alto nivel. Tipado estatico. Orientado a objetos. Multi-hilo. Compilado a byte-code, interpretado/JIT a codigo maquina.</td>
+                <td>2023, 6to año</td>
+                <td>No me banco los genericos, son una bosta. Prefiero los templates de C++</td>
+            </tr>
+        </tbody>
+    </table>
+    <form action="">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" maxlength="50">
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" maxlength="50">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <label for="eCivil">Estado civil:</label>
+        <select name="eCivil" id="eCivil" required>
+            <option value="">Elegi boludito</option>
+            <option value="soltero">Soltero/a</option>
+            <option value="casado">Casado/a</option>
+            <option value="lol">Bruh</option>
+            <option value="nose">Nunca, ah no esa no era xd</option>
+        </select>
+        <label for="newsletter">Quere el newsletter?</label>
+        <input type="checkbox" name="newsletter" id="newsletter" checked>
+        <textarea name="info" id="info" cols="30" rows="10" placeholder="momo no banca?" maxlength="500"></textarea>
+        <button type="reset">Todo mal borra borra borra</button>
+        <button type="submit">Subir esta mrd</button>
+    </form>
+</body>
+</html>
